@@ -27,7 +27,7 @@ import java.util.regex.Pattern;
 public class HttpUrlChecker
 {
     static Matcher getMatcher(String s){
-        Pattern pattern = Pattern.compile("http://[a-zA-Z]+.com");
+        Pattern pattern = Pattern.compile("http://(www.)?[a-zA-Z]+.com");
 
         return pattern.matcher(s);
     }
